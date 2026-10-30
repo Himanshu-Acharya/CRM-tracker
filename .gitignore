@@ -1,0 +1,15 @@
+# Local secrets and database
+.env
+**/.env
+*.sqlite3
+*.sqlite3-journal
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
