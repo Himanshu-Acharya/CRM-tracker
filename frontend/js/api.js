@@ -1,10 +1,9 @@
 const API_BASE_URL =
     window.location.protocol === 'file:' ||
-        window.location.hostname === "127.0.0.1" ||
-        window.location.hostname === "localhost"
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost"
         ? "http://127.0.0.1:8000/api/v1"
-        : "/api/v1";
-
+        : "https://crm-tracker-backend.onrender.com/api/v1";
 class API {
     // No longer a static getHeaders – we build headers dynamically in request()
     static async refreshToken() {
